@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Poker.class/Poker.class.csproj" />
+  <Project Path="Poker.Test/Poker.Test.csproj" />
+</Solution>

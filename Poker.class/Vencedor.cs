@@ -4,6 +4,8 @@ public static class Vencedor
 {
     public static ResultadoVencedor Determinar(Mao mao1, Mao mao2)
     {
+
+
         int valorMao1 = mao1.card1 + (mao1.card2 ?? 0);
         int valorMao2 = mao2.card1 + (mao2.card2 ?? 0);
 
@@ -20,10 +22,18 @@ public static class Vencedor
         return ResultadoVencedor.Empate;
     }
 
-    public static ResultadoVencedor ValiarDuasCartas(Mao mao1, Mao mao2)
+    public static ResultadoVencedor ValiarPesoCartas(Mao mao1, Mao mao2)
     {
-        int valorMaoUm = mao1.card1 + (mao1.card2 ?? 0);
-        int valorMaoDois = mao2.card1 + (mao2.card2 ?? 0);
+        int valorMaoUm = mao1.card1
+            + (mao1.card2 ?? 0)
+            + (mao1.card3 ?? 0)
+            + (mao1.card4 ?? 0)
+            + (mao1.card5 ?? 0);
+        int valorMaoDois = mao2.card1
+            + (mao2.card2 ?? 0)
+            + (mao2.card3 ?? 0)
+            + (mao2.card4 ?? 0)
+            + (mao2.card5 ?? 0);
 
         if (valorMaoUm > valorMaoDois)
         {

@@ -28,7 +28,7 @@ public sealed class Test1
         Mao mao1 = new Mao("9O", "9O");
         Mao mao2 = new Mao("2O", "2O");
 
-        var resultado = Vencedor.ValiarDuasCartas(mao1, mao2);
+        var resultado = Vencedor.ValiarPesoCartas(mao1, mao2);
 
         Assert.AreEqual(ResultadoVencedor.Mao1, resultado);
     }
@@ -39,7 +39,7 @@ public sealed class Test1
         Mao mao1 = new Mao("2O", "2O");
         Mao mao2 = new Mao("9O", "9O");
 
-        var resultado = Vencedor.ValiarDuasCartas(mao1, mao2);
+        var resultado = Vencedor.ValiarPesoCartas(mao1, mao2);
 
         Assert.AreEqual(ResultadoVencedor.Mao2, resultado);
     }
@@ -50,7 +50,7 @@ public sealed class Test1
         Mao mao1 = new Mao("9O", "2O");
         Mao mao2 = new Mao("5O", "6O");
 
-        var resultado = Vencedor.ValiarDuasCartas(mao1, mao2);
+        var resultado = Vencedor.ValiarPesoCartas(mao1, mao2);
 
         Assert.AreEqual(ResultadoVencedor.Empate, resultado);
     }

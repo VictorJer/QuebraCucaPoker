@@ -17,9 +17,9 @@ public sealed class Test1
         Mao mao1 = new Mao("9O");
         Mao mao2 = new Mao("2O");
 
-        var maoUmMaiorQMaoDois = ValidarCartas.ValidarMao(mao1, mao2);
+        var resultado = Vencedor.ValiarPesoCartas(mao1, mao2);
 
-        Assert.IsTrue(maoUmMaiorQMaoDois);
+        Assert.AreEqual(ResultadoVencedor.Mao1, resultado);
     }
 
     [TestMethod]
